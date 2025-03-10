@@ -9,12 +9,15 @@ html {
 }
 
 /* FONTS */
-pre, h3, p, aside {
+pre, h3, aside {
     font-family: Carrois Gothic, serif, 'Lucida Sans', Arial;
     font-size: 18px;
     line-height: 25px;
     word-spacing: 2px;
-
+    /* Use flexbox to align content */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 h1 {
@@ -23,4 +26,67 @@ h1 {
     letter-spacing: 2px;
     font-size: 35px;
     color: rgb(162, 171, 209);
+
+    /* Use flexbox to align content */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 30px;
+
 }
+
+/* Add space between title and text */
+h3:first-of-type {
+    padding-top: 50px;
+}
+
+h3 {
+    padding-bottom: 15px;
+}
+
+/* Position the "aside" paragraph */
+aside {
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+section:nth-child(3) {
+    width: 350px;
+    /* margin-left: 1000px; */
+    float: right;
+    padding-right: 25px;
+
+
+}
+
+section:nth-child(4) {
+    padding-left: 375px ;
+}
+
+/* Didn't work
+h3:nth-child(5) {
+    padding-left: 0 ;
+    margin: 0;
+
+} */
+
+/* Move 5th h3 over to right */
+ .chorus {
+    padding-left: 375px;
+ }
+
+ /* FOOTER */
+p {
+    font-size: 13px;
+    font-family: Carrois Gothic, serif, 'Lucida Sans', Arial;
+
+ }
+
+ footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 190px;
+ }
