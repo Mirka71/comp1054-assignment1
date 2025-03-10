@@ -5,13 +5,22 @@
 html {
     background-image: url(../images/darkforest1.jpg);
     color: rgb(191, 197, 221);
+    background-size: cover;
 }
 
-pre, h3, p {
+/* FONTS */
+pre, h3, p, aside {
     font-family: Carrois Gothic, serif, 'Lucida Sans', Arial;
+    font-size: 18px;
+    line-height: 25px;
+    word-spacing: 2px;
+
 }
 
 h1 {
     font-family: "ceviche one", serif, 'Lucida Sans', Arial;
-    font-weight: ;
+    /* font-weight: ; */
+    letter-spacing: 2px;
+    font-size: 35px;
+    color: rgb(162, 171, 209);
 }
